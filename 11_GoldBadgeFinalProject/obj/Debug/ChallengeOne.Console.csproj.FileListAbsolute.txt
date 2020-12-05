@@ -1,0 +1,10 @@
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\11_GoldBadgeFinalProject\bin\Debug\11_GoldBadgeFinalProject.exe.config
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\11_GoldBadgeFinalProject\bin\Debug\11_GoldBadgeFinalProject.exe
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\11_GoldBadgeFinalProject\bin\Debug\11_GoldBadgeFinalProject.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\11_GoldBadgeFinalProject\bin\Debug\ChallengeOne.Repository.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\11_GoldBadgeFinalProject\bin\Debug\ChallengeOne.Repository.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\11_GoldBadgeFinalProject\obj\Debug\ChallengeOne.Console.csprojAssemblyReference.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\11_GoldBadgeFinalProject\obj\Debug\ChallengeOne.Console.csproj.CoreCompileInputs.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\11_GoldBadgeFinalProject\obj\Debug\ChallengeOne.Console.csproj.CopyComplete
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\11_GoldBadgeFinalProject\obj\Debug\11_GoldBadgeFinalProject.exe
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\11_GoldBadgeFinalProject\obj\Debug\11_GoldBadgeFinalProject.pdb
