@@ -1,0 +1,10 @@
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_Claims\bin\Debug\01_Claims.exe.config
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_Claims\bin\Debug\01_Claims.exe
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_Claims\bin\Debug\01_Claims.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_Claims\bin\Debug\01_ClaimsRepository.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_Claims\bin\Debug\01_ClaimsRepository.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_Claims\obj\Debug\01_Claims.Console.csprojAssemblyReference.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_Claims\obj\Debug\01_Claims.Console.csproj.CoreCompileInputs.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_Claims\obj\Debug\01_Claims.Console.csproj.CopyComplete
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_Claims\obj\Debug\01_Claims.exe
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_Claims\obj\Debug\01_Claims.pdb

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeOne.Console", "11_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeOne.Repository", "ChallengeOne.Repository\ChallengeOne.Repository.csproj", "{18A0F1B7-4B3D-4B08-A93D-9E363BDD166B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Claims.Console", "01_Claims\01_Claims.Console.csproj", "{7D63EA39-677A-4263-B936-A70884F2CBBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Claims.Repository", "01_ClaimsRepository\01_Claims.Repository.csproj", "{AFCD35CA-C3E6-4577-AB20-CCE03DB7A8D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{18A0F1B7-4B3D-4B08-A93D-9E363BDD166B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18A0F1B7-4B3D-4B08-A93D-9E363BDD166B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18A0F1B7-4B3D-4B08-A93D-9E363BDD166B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D63EA39-677A-4263-B936-A70884F2CBBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D63EA39-677A-4263-B936-A70884F2CBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D63EA39-677A-4263-B936-A70884F2CBBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D63EA39-677A-4263-B936-A70884F2CBBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCD35CA-C3E6-4577-AB20-CCE03DB7A8D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCD35CA-C3E6-4577-AB20-CCE03DB7A8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCD35CA-C3E6-4577-AB20-CCE03DB7A8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCD35CA-C3E6-4577-AB20-CCE03DB7A8D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

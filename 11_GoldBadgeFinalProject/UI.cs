@@ -14,9 +14,8 @@ namespace _11_GoldBadgeFinalProject
         //Method that starts the app
         public void Run()
         {
-            Menu();
             SeedMethod();
-
+            Menu();
         }
 
         //Menu
@@ -49,6 +48,7 @@ namespace _11_GoldBadgeFinalProject
                         break;
                     case "3":
                         //Display the Existing meals from the menu
+                        Console.Clear();
                         DisplayAllMealsOnMenu();
                         break;
                     case "4":
@@ -93,7 +93,7 @@ namespace _11_GoldBadgeFinalProject
             { 
                 Console.WriteLine("Please input ingredient");
                 string ingredient = Console.ReadLine();
-
+               
                 if (!newMeal.ListOfIngredients.Contains(ingredient))
                 {
                     newMeal.ListOfIngredients.Add(ingredient);
@@ -102,19 +102,6 @@ namespace _11_GoldBadgeFinalProject
                 {
                     Console.WriteLine("Your ingredient was already on the list so it was not added.");
                 }
-                //foreach (string ingredients in newMeal.ListOfIngredients)
-                //{
-                //    //if (!ingredient.Contains(ingredients))
-                //    if (ingredient == ingredients)
-                //    {
-                //        Console.WriteLine("Your ingredient was already on the list so it was not added.");
-                //    }
-                //    else
-                //    {
-                //        newMeal.ListOfIngredients.Add(ingredient);
-                //    }
-                //}
-
 
                 bool tryAnotherLetter = true;
 
@@ -190,16 +177,18 @@ namespace _11_GoldBadgeFinalProject
         //Display all meals from the menu
         private List<Meal> DisplayAllMealsOnMenu()
         {
+            Console.Clear();
             List<Meal> mealList = _menuRepository.ReadMenu();
             foreach(Meal meal in mealList)
             {
-                Console.WriteLine($"{meal.MealNumber}. {meal.MealName}. Description: {meal.MealDescription}\n" +
+                Console.WriteLine($"{meal.MealNumber}. {meal.MealName}. ${meal.MealPrice}. Description: {meal.MealDescription}\n" +
                     $"Ingredients in meal:");
 
                 foreach(string ingredient in meal.ListOfIngredients)
                 {
                     Console.WriteLine(ingredient);
                 }
+                Console.WriteLine("\n\n");
             }
             return mealList;
         }
