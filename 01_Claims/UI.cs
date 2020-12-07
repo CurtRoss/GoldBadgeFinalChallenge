@@ -37,7 +37,7 @@ namespace _01_Claims
                 {
                     case "1":
                         //Display all Claims in the Queue
-                        ShowClaimQueue();
+                        DisplayAllClaims();
                         break;
                     case "2":
                         //Take care of the next claim
@@ -75,6 +75,44 @@ namespace _01_Claims
             }
 
             return claimQueue;
+        }
+
+        private void DisplayAllClaims()
+        {
+            //int[] claimNumber;
+            //ClaimType[] claimType;
+            //string[] description;
+            //double[] amount;
+            //DateTime[] dateOfAccident;
+            //DateTime[] dateOfClaim;
+            //bool[] isValid;
+
+            List<int> _claimNumbers = new List<int>();
+            List<ClaimType> _claimTypes = new List<ClaimType>();
+            List<string> _descriptions = new List<string>();
+            List<double> _claimAmounts = new List<double>();
+            List<DateTime> _dateOfAccidents = new List<DateTime>();
+            List<DateTime> _dateOfClaims = new List<DateTime>();
+            List<bool> _isValids = new List<bool>();
+
+
+            Queue<Claim> claimQueue = _claimRepository.GetClaimList();
+            foreach (Claim claim in claimQueue)
+            {
+                _claimNumbers.Add(claim.ClaimNumber);
+                _claimTypes.Add(claim.ClaimType);
+                _descriptions.Add(claim.Description);
+                _claimAmounts.Add(claim.ClaimAmount);
+                _dateOfAccidents.Add(claim.DateOfIncident);
+                _dateOfClaims.Add(claim.DateOfClaim);
+                _isValids.Add(claim.IsValid);
+            }
+            var display = new System.Text.StringBuilder();
+            display.Append(String.Format("{0,-10} {1,-10} {2,-60} {3,-10} {4,-15} {5,-15} {6,-10}\n", "Number", "Type", "Description", "Amount", "Incident Date", "Date of Claim", "Is Claim Valid"));
+
+            for (int index = 0; index < _claimNumbers.Count; index++)
+                display.Append(String.Format("{0,-10} {1,-10} {2,-60} {3,-10} {4,-15} {5,-15} {6,-10}\n", _claimNumbers[index], _claimTypes[index], _descriptions[index], _claimAmounts[index], _dateOfAccidents[index].ToShortDateString(), _dateOfClaims[index].ToShortDateString(), _isValids[index]));
+            Console.WriteLine(display);
         }
 
 
