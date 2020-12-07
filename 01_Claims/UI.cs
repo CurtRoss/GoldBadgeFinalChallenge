@@ -77,16 +77,9 @@ namespace _01_Claims
             return claimQueue;
         }
 
-        private void DisplayAllClaims()
+        private Queue<Claim> DisplayAllClaims()
         {
-            //int[] claimNumber;
-            //ClaimType[] claimType;
-            //string[] description;
-            //double[] amount;
-            //DateTime[] dateOfAccident;
-            //DateTime[] dateOfClaim;
-            //bool[] isValid;
-
+            //Build out containers for each data collection
             List<int> _claimNumbers = new List<int>();
             List<ClaimType> _claimTypes = new List<ClaimType>();
             List<string> _descriptions = new List<string>();
@@ -95,7 +88,7 @@ namespace _01_Claims
             List<DateTime> _dateOfClaims = new List<DateTime>();
             List<bool> _isValids = new List<bool>();
 
-
+            //Fill those dontainers with contents
             Queue<Claim> claimQueue = _claimRepository.GetClaimList();
             foreach (Claim claim in claimQueue)
             {
@@ -107,12 +100,15 @@ namespace _01_Claims
                 _dateOfClaims.Add(claim.DateOfClaim);
                 _isValids.Add(claim.IsValid);
             }
+            //Display contents of each item in Queue. Formatted. Aligned left.
             var display = new System.Text.StringBuilder();
             display.Append(String.Format("{0,-10} {1,-10} {2,-60} {3,-10} {4,-15} {5,-15} {6,-10}\n", "Number", "Type", "Description", "Amount", "Incident Date", "Date of Claim", "Is Claim Valid"));
 
             for (int index = 0; index < _claimNumbers.Count; index++)
                 display.Append(String.Format("{0,-10} {1,-10} {2,-60} {3,-10} {4,-15} {5,-15} {6,-10}\n", _claimNumbers[index], _claimTypes[index], _descriptions[index], _claimAmounts[index], _dateOfAccidents[index].ToShortDateString(), _dateOfClaims[index].ToShortDateString(), _isValids[index]));
             Console.WriteLine(display);
+
+            return claimQueue;
         }
 
 
@@ -120,7 +116,9 @@ namespace _01_Claims
         private void TakeCareOfClaim()
         {
             //Get claim list
-            Queue<Claim> claims = _claimRepository.GetClaimList();
+            Queue<Claim> claims = DisplayAllClaims();
+            Console.WriteLine("Please press enter to process first claim");
+            Console.ReadLine();
 
             //Display claim to be handled
             Claim firstOnList = claims.First<Claim>();
@@ -157,7 +155,7 @@ namespace _01_Claims
             {
                 Console.WriteLine("This claim is not valid. This claim has been filed in the 'denied due to invalid' list");
             }
-                    //Create repo for denied/accepted claims?
+            //Create repo for denied/accepted claims?
         }
 
 
@@ -175,35 +173,50 @@ namespace _01_Claims
             newClaim.Description = Console.ReadLine();
 
             //Claim Type
-            Console.WriteLine("What is the type of incident? Enter the number for your choice\n" +
-                "1. Car\n" +
-                "2. Home\n" +
-                "3. Theft");
-
-            string inputAsString = Console.ReadLine();
-            int input = int.Parse(inputAsString);
-
-            switch (input)
+            int input = -1;
+            bool isTrue = false;
+            while (isTrue == false)
             {
-                case 1:
-                    newClaim.ClaimType = ClaimType.Car;
-                    break;
-                case 2:
-                    newClaim.ClaimType = ClaimType.Home;
-                    break;
-                case 3:
-                    newClaim.ClaimType = ClaimType.Theft;
-                    break;
-                default:
-                    Console.WriteLine("You did not choose a valid option, please choose 1, 2, or 3");
-                    break;
+                Console.WriteLine("What is the type of incident? Enter the number for your choice\n" +
+                    "1. Car\n" +
+                    "2. Home\n" +
+                    "3. Theft");
+
+                string inputAsString = Console.ReadLine();
+
+                isTrue = int.TryParse(inputAsString, out input);
+
+
+                switch (input)
+                {
+                    case 1:
+                        newClaim.ClaimType = ClaimType.Car;
+                        isTrue = true;
+                        break;
+                    case 2:
+                        newClaim.ClaimType = ClaimType.Home;
+                        isTrue = true;
+                        break;
+                    case 3:
+                        newClaim.ClaimType = ClaimType.Theft;
+                        isTrue = true;
+                        break;
+                    default:
+                        Console.WriteLine("You did not choose a valid option, please choose 1, 2, or 3");
+                        break;
+                }
             }
 
             //Claim Amount
-            Console.WriteLine("Enter the amount of the claim");
-            string amountAsString = Console.ReadLine();
-            double amount = double.Parse(amountAsString);
-            newClaim.ClaimAmount = amount;
+            double input2 = -1;
+            bool isFalse = false;
+            while (isFalse == false)
+            {
+                Console.WriteLine("Enter the amount of the claim");
+                string amountAsString = Console.ReadLine();
+                isFalse = double.TryParse(amountAsString, out input2);
+                newClaim.ClaimAmount = input2;
+            }
 
 
             //Date of Incident
@@ -350,14 +363,14 @@ namespace _01_Claims
                     }
                 }
 
-                    Console.WriteLine($"Are you sure you wanted to input {yearOfIncident} Y/N?");
+                Console.WriteLine($"Are you sure you wanted to input {yearOfIncident} Y/N?");
 
-                    string answer = Console.ReadLine();
+                string answer = Console.ReadLine();
 
-                    if (answer.ToLower().Contains("y"))
-                    {
-                        return yearOfIncident;
-                    }
+                if (answer.ToLower().Contains("y"))
+                {
+                    return yearOfIncident;
+                }
             }
         }
 
@@ -366,7 +379,7 @@ namespace _01_Claims
         private void SeedMethod()
         {
             Claim claim1 = new Claim(ClaimType.Car, "worst accident ever", 67.42, new DateTime(2020, 10, 10), new DateTime(2020, 10, 15), true);
-            Claim claim2 = new Claim(ClaimType.Theft, "stupid thief took my headphones", 150, new DateTime(2020, 4, 12), new DateTime(2020, 5, 18), true);
+            Claim claim2 = new Claim(ClaimType.Theft, "stupid thief took my headphones", 150, new DateTime(2020, 4, 12), new DateTime(2020, 5, 18), false);
             Claim claim3 = new Claim(ClaimType.Home, "A big branch went through my window", 600, new DateTime(2019, 5, 22), new DateTime(2019, 6, 1), true);
             Claim claim4 = new Claim(ClaimType.Car, "Dude was eating a burger and rammed my backside (gross)", 1500.43, new DateTime(2020, 1, 1), new DateTime(2020, 2, 1), true);
 
