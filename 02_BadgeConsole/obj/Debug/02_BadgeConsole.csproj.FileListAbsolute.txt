@@ -1,0 +1,10 @@
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_BadgeConsole\obj\Debug\02_BadgeConsole.csprojAssemblyReference.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_BadgeConsole\obj\Debug\02_BadgeConsole.csproj.CoreCompileInputs.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_BadgeConsole\bin\Debug\02_BadgeConsole.exe.config
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_BadgeConsole\bin\Debug\02_BadgeConsole.exe
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_BadgeConsole\bin\Debug\02_BadgeConsole.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_BadgeConsole\bin\Debug\02_BadgeRepository.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_BadgeConsole\bin\Debug\02_BadgeRepository.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_BadgeConsole\obj\Debug\02_BadgeConsole.csproj.CopyComplete
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_BadgeConsole\obj\Debug\02_BadgeConsole.exe
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_BadgeConsole\obj\Debug\02_BadgeConsole.pdb
