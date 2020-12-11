@@ -26,7 +26,8 @@ namespace _03_EventsConsole
                 Console.WriteLine("Please select an option from the following choices\n\n" +
                     "1. Add new event to the list of outings.\n" +
                     "2. Display all outings.\n" +
-                    "3. Display costs of outings");
+                    "3. Display costs of outings\n" +
+                    "4. Exit Program");
 
                 //Take User Input 
                 string input = Console.ReadLine();
@@ -150,55 +151,75 @@ namespace _03_EventsConsole
                 "2. Outings costs per type of outing");
 
             string input = Console.ReadLine();
-            switch (input)
+            try
             {
-                case "1":
-                    //Calculate costs for all outings.
-                    List<double> listOfCosts = new List<double>();
-                    foreach (Events events in _eventsRepository._allEventsList)
-                    {
-                        listOfCosts.Add(events.TotalCost);
-                    }
-                    Console.WriteLine(listOfCosts.Sum()); 
+                switch (input)
+                {
+                    case "1":
+                        //Calculate costs for all outings.
+                        List<double> listOfCosts = new List<double>();
+                        foreach (Events events in _eventsRepository._allEventsList)
+                        {
+                            listOfCosts.Add(events.TotalCost);
+                        }
+                        Console.WriteLine(listOfCosts.Sum());
 
-                    break;
-                case "2":
-                    //Another submenu
-                    Console.WriteLine("Calculate the total costs for which type?\n\n" +
-                        "1. Golf\n" +
-                        "2. Bowling\n" +
-                        "3. Amusement Park\n" +
-                        "4. Concert");
+                        break;
+                    case "2":
+                        //Another submenu
+                        Console.WriteLine("Calculate the total costs for which type?\n\n" +
+                            "1. Golf\n" +
+                            "2. Bowling\n" +
+                            "3. Amusement Park\n" +
+                            "4. Concert");
 
-                    string input2 = Console.ReadLine();
-                    int input3 = int.Parse(input2);
-                    EventType typeOfEvent = (EventType)input3;
-                    switch (input2)
-                    {
-                        case "1":
-                            //Code to calulate total costs for Golf
-                            CalculateTotalForEnum(typeOfEvent);
-                            break;
-                        case "2":
-                            //Code to calculate total costs for Bowling
-                            CalculateTotalForEnum(typeOfEvent);
-                            break;
-                        case "3":
-                            //Code to calculate total costs for Amusement Park
-                            CalculateTotalForEnum(typeOfEvent);
-                            break;
-                        case "4":
-                            //Code to calulate total costs for concerts
-                            CalculateTotalForEnum(typeOfEvent);
-                            break;
-                        default:
-                            //This is an invalid option
-                            break;
-                    }
-                    break;
-                default:
-                    Console.WriteLine("You have input an invalid choice");
-                    break;
+                        int input2 = int.Parse(Console.ReadLine());
+                        EventType typeOfEvent = (EventType)input2;
+                        switch (input2)
+                        {
+                            case 1:
+
+                                
+
+                                //Code to calulate total costs for Golf
+                                CalculateTotalForEnum(typeOfEvent);
+                                break;
+                            case 2:
+
+                                
+
+                                //Code to calculate total costs for Bowling
+                                CalculateTotalForEnum(typeOfEvent);
+                                break;
+                            case 3:
+
+                                
+
+                                //Code to calculate total costs for Amusement Park
+                                CalculateTotalForEnum(typeOfEvent);
+                                break;
+                            case 4:
+
+                                
+
+                                //Code to calulate total costs for concerts
+                                CalculateTotalForEnum(typeOfEvent);
+                                break;
+                            default:
+                                //This is an invalid option
+                                Console.WriteLine("This is an invalid option, Please select again.");
+                                break;
+                        }
+                        break;
+                    default:
+                        Console.WriteLine("You have input an invalid choice");
+                        break;
+                }
+            }
+            catch (Exception) 
+            {
+
+                Console.WriteLine($"Sorry wrong choice");
             }
         }
 
