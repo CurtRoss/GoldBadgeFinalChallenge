@@ -1,0 +1,6 @@
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_EventsRepo\bin\Debug\03_EventsRepo.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_EventsRepo\bin\Debug\03_EventsRepo.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_EventsRepo\obj\Debug\03_EventsRepo.csprojAssemblyReference.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_EventsRepo\obj\Debug\03_EventsRepo.csproj.CoreCompileInputs.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_EventsRepo\obj\Debug\03_EventsRepo.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_EventsRepo\obj\Debug\03_EventsRepo.pdb

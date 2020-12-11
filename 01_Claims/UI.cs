@@ -38,6 +38,7 @@ namespace _01_Claims
                     case "1":
                         //Display all Claims in the Queue
                         DisplayAllClaims();
+                        //ShowClaimQueue();
                         break;
                     case "2":
                         //Take care of the next claim
@@ -88,7 +89,7 @@ namespace _01_Claims
             List<DateTime> _dateOfClaims = new List<DateTime>();
             List<bool> _isValids = new List<bool>();
 
-            //Fill those dontainers with contents
+            //Fill those containers with contents
             Queue<Claim> claimQueue = _claimRepository.GetClaimList();
             foreach (Claim claim in claimQueue)
             {
@@ -121,39 +122,53 @@ namespace _01_Claims
             Console.ReadLine();
 
             //Display claim to be handled
-            Claim firstOnList = claims.First<Claim>();
-            Console.WriteLine($"ClaimID: {firstOnList.ClaimNumber}\n\n" +
-                $"Type: {firstOnList.ClaimType}\n\n" +
-                $"Description: {firstOnList.Description}\n\n" +
-                $"Amount: ${firstOnList.ClaimAmount}\n\n" +
-                $"DateOfAccident: {firstOnList.DateOfIncident}\n\n" +
-                $"DateOfClaim: {firstOnList.DateOfClaim}\n\n" +
-                $"IsValid: {firstOnList.IsValid}");
+            //Claim firstOnList = claims.First<Claim>();
+            //Console.WriteLine($"ClaimID: {firstOnList.ClaimNumber}\n\n" +
+            //$"Type: {firstOnList.ClaimType}\n\n" +
+            //$"Description: {firstOnList.Description}\n\n" +
+            //$"Amount: ${firstOnList.ClaimAmount}\n\n" +
+            //$"DateOfAccident: {firstOnList.DateOfIncident}\n\n" +
+            //$"DateOfClaim: {firstOnList.DateOfClaim}\n\n" +
+            //$"IsValid: {firstOnList.IsValid}");
 
             //I dont think I needed to do the above because dequeue should return my claim, but I figured that out after I wrote this code, and well, this works too.
 
+            Claim firstOnList = claims.Peek();
+            Console.WriteLine($"ClaimID: {firstOnList.ClaimNumber}\n\n" +
+            $"Type: {firstOnList.ClaimType}\n\n" +
+            $"Description: {firstOnList.Description}\n\n" +
+            $"Amount: ${firstOnList.ClaimAmount}\n\n" +
+            $"DateOfAccident: {firstOnList.DateOfIncident}\n\n" +
+            $"DateOfClaim: {firstOnList.DateOfClaim}\n\n" +
+            $"IsValid: {firstOnList.IsValid}");
 
-            //Dequeue
-            Claim claimToTakeCareOf = claims.Dequeue();
+            Console.WriteLine("Do you want to deal with this claim now? Y/N");
 
-            //Check if valid by IsValid and amount of days between incident and claim
-            TimeSpan hasItBeenThirtyDays = claimToTakeCareOf.DateOfClaim - claimToTakeCareOf.DateOfIncident;
-            if (claimToTakeCareOf.IsValid)
+            if (Console.ReadLine().ToLower().Contains("y"))
             {
-                if (hasItBeenThirtyDays.TotalDays <= 30)
+
+                //Dequeue
+                Claim claimToTakeCareOf = claims.Dequeue();
+
+                //Check if valid by IsValid and amount of days between incident and claim
+                TimeSpan hasItBeenThirtyDays = claimToTakeCareOf.DateOfClaim - claimToTakeCareOf.DateOfIncident;
+                if (claimToTakeCareOf.IsValid)
                 {
-                    Console.WriteLine($"Write a check for ${claimToTakeCareOf.ClaimAmount}\n" +
-                        $"This claim has been stored in the 'paid claims' file");
+                    if (hasItBeenThirtyDays.TotalDays <= 30 && claimToTakeCareOf.DateOfClaim > claimToTakeCareOf.DateOfIncident)
+                    {
+                        Console.WriteLine($"Write a check for ${claimToTakeCareOf.ClaimAmount}\n" +
+                            $"This claim has been stored in the 'paid claims' file");
+                    }
+                    else
+                    {
+                        Console.WriteLine("This claim is not valid. This claim has been filed in the 'denied due to exceeds time limit' file");
+
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("This claim is not valid. This claim has been filed in the 'denied due to exceeds time limit' file");
-
+                    Console.WriteLine("This claim is not valid. This claim has been filed in the 'denied due to invalid' list");
                 }
-            }
-            else
-            {
-                Console.WriteLine("This claim is not valid. This claim has been filed in the 'denied due to invalid' list");
             }
             //Create repo for denied/accepted claims?
         }
@@ -272,6 +287,7 @@ namespace _01_Claims
 
             while (true)
             {
+                Console.Clear();
                 int month = -1;
                 bool didItWork = false;
                 while (didItWork == false)
@@ -303,6 +319,9 @@ namespace _01_Claims
                     {
                         return month;
                     }
+                    Console.WriteLine("You entered an invalid option, Please Try Again");
+                    Console.ReadLine();
+                    Console.Clear();
                 }
                 else
                 {
@@ -342,6 +361,9 @@ namespace _01_Claims
                         return dayOfIncident;
                     }
                 }
+                Console.WriteLine("That is an invalid date for the chosen month, try again");
+                Console.ReadLine();
+                Console.Clear();
             }
         }
 
@@ -387,8 +409,13 @@ namespace _01_Claims
             _claimRepository.AddClaimToList(claim2);
             _claimRepository.AddClaimToList(claim3);
             _claimRepository.AddClaimToList(claim4);
-
-
         }
+
+        //Helper Methods
+
     }
 }
+
+
+
+

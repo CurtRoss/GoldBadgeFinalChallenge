@@ -111,11 +111,11 @@ namespace _02_BadgeConsole
                 }
                 string inputAsString = Console.ReadLine();
                 bool didItWork = int.TryParse(inputAsString, out int input);
-                newBadge.DoorNames.Add(_doorList[input-1].DoorName);
 
                 if (didItWork)
                 {
 
+                    newBadge.DoorNames.Add(_doorList[input - 1].DoorName);
                     Console.WriteLine("Would you like to add access to an additional door? Y/N?");
                     if (Console.ReadLine().ToLower().Contains("n"))
                     {
@@ -130,8 +130,8 @@ namespace _02_BadgeConsole
         //Update Existing Badge
         private void UpdateExistingBadge()
         {
-            
-            DisplayAllBadgeNumbers(); 
+
+            DisplayAllBadgeNumbers();
             Console.WriteLine("Enter the number of the ID you want to change");
             string answer = Console.ReadLine();
             bool isParsed = int.TryParse(answer, out int answerAsInt);
@@ -155,9 +155,9 @@ namespace _02_BadgeConsole
                             {
                                 Console.WriteLine($"{i + 1}   {toChange.DoorNames[i]}");
                             }
-                                string selectionAsString = Console.ReadLine();
-                                int selection = int.Parse(selectionAsString);
-                                toChange.DoorNames.RemoveAt(selection - 1);
+                            string selectionAsString = Console.ReadLine();
+                            int selection = int.Parse(selectionAsString);
+                            toChange.DoorNames.RemoveAt(selection - 1);
                             break;
                         case "2":
                             //Add Door
@@ -167,9 +167,9 @@ namespace _02_BadgeConsole
                                 Console.WriteLine($"{i + 1}   {_doorList[i].DoorName}");
                             }
 
-                                string selectionAsString2 = Console.ReadLine();
-                                int selection2 = int.Parse(selectionAsString2);
-                                toChange.DoorNames.Add(_doorList[selection2 - 1].DoorName);
+                            string selectionAsString2 = Console.ReadLine();
+                            int selection2 = int.Parse(selectionAsString2);
+                            toChange.DoorNames.Add(_doorList[selection2 - 1].DoorName);
                             break;
                         default:
                             Console.WriteLine("Not a valid selection");
@@ -193,20 +193,26 @@ namespace _02_BadgeConsole
         private Dictionary<int, Badge> DisplayAllBadgeNumbers()
         {
             Dictionary<int, Badge> badgeList = _badgeRepository.GetDictionary();
+            Console.WriteLine("Badge Number   Doors Accessed\n");
             foreach (KeyValuePair<int, Badge> kvp in badgeList)
             {
-                
-                Console.WriteLine($"{kvp.Key}\n");
-                foreach(string str in kvp.Value.DoorNames)
-                {
-                    Console.WriteLine(str);
-                }
+                //for (int i = 0; i < kvp.Value.DoorNames.Count; i++)
+                //{
+
+                    Console.Write($"    {kvp.Key}         ");
+                    foreach (string str in kvp.Value.DoorNames)
+                    {
+                        Console.Write(str + ", ");
+                    }
+                        Console.WriteLine("\n");
+                //}
             }
-                return badgeList;
+            return badgeList;
         }
 
         private void SeedMethod()
         {
+
             //Create a bunch of doors
             Door A1 = new Door("A1");
             Door A2 = new Door("A2");
@@ -238,6 +244,23 @@ namespace _02_BadgeConsole
             _doorList.Add(C2);
             _doorList.Add(C3);
             _doorList.Add(C4);
+
+            Badge badge1 = new Badge();
+            badge1.DoorNames.Add(A1.DoorName);
+            badge1.DoorNames.Add(A2.DoorName);
+            badge1.DoorNames.Add(C3.DoorName);
+            _badgeRepository.AddBadgeToDictionary(123, badge1);
+            Badge badge2 = new Badge();
+            badge2.DoorNames.Add(B3.DoorName);
+            badge2.DoorNames.Add(C1.DoorName);
+            badge2.DoorNames.Add(A5.DoorName);
+            _badgeRepository.AddBadgeToDictionary(124, badge2);
+            Badge badge3 = new Badge();
+            badge3.DoorNames.Add(C1.DoorName);
+            badge3.DoorNames.Add(A2.DoorName);
+            badge3.DoorNames.Add(B3.DoorName);
+            _badgeRepository.AddBadgeToDictionary(125, badge3);
+            
         }
     }
 }

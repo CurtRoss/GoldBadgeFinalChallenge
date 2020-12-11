@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_BadgeConsole", "02_Badge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_BadgeRepository", "02_BadgeRepository\02_BadgeRepository.csproj", "{DA2C642E-4819-4521-B860-A4E62104AC89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_EventsRepo", "03_EventsRepo\03_EventsRepo.csproj", "{501292DC-3AA1-453B-A0A3-655CEE394E01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_EventsConsole", "03_EventsConsole\03_EventsConsole.csproj", "{A53F6ADB-5787-49E0-AB98-BBCDB53E9B7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{DA2C642E-4819-4521-B860-A4E62104AC89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA2C642E-4819-4521-B860-A4E62104AC89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA2C642E-4819-4521-B860-A4E62104AC89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{501292DC-3AA1-453B-A0A3-655CEE394E01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{501292DC-3AA1-453B-A0A3-655CEE394E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{501292DC-3AA1-453B-A0A3-655CEE394E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{501292DC-3AA1-453B-A0A3-655CEE394E01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A53F6ADB-5787-49E0-AB98-BBCDB53E9B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A53F6ADB-5787-49E0-AB98-BBCDB53E9B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A53F6ADB-5787-49E0-AB98-BBCDB53E9B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A53F6ADB-5787-49E0-AB98-BBCDB53E9B7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
