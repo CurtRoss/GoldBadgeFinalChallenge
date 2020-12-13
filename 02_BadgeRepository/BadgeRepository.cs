@@ -63,6 +63,7 @@ namespace _02_BadgeRepository
         //Helper Method
         public Badge GetBadgeByBadgeNumber(int badgeNumber)
         {
+            
             bool isTrue = _badgeDictionary.TryGetValue(badgeNumber, out Badge thisBadge);
             if (isTrue)
             {

@@ -1,0 +1,16 @@
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\bin\Debug\03_BadgeUnitTest.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\bin\Debug\03_BadgeUnitTest.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\bin\Debug\02_BadgeRepository.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\bin\Debug\02_BadgeRepository.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\obj\Debug\03_BadgeUnitTest.csprojAssemblyReference.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\obj\Debug\03_BadgeUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\obj\Debug\03_BadgeUnitTest.csproj.CopyComplete
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\obj\Debug\03_BadgeUnitTest.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\03_BadgeUnitTest\obj\Debug\03_BadgeUnitTest.pdb

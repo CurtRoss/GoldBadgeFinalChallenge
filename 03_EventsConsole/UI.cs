@@ -178,30 +178,18 @@ namespace _03_EventsConsole
                         switch (input2)
                         {
                             case 1:
-
-                                
-
                                 //Code to calulate total costs for Golf
                                 CalculateTotalForEnum(typeOfEvent);
                                 break;
                             case 2:
-
-                                
-
                                 //Code to calculate total costs for Bowling
                                 CalculateTotalForEnum(typeOfEvent);
                                 break;
                             case 3:
-
-                                
-
                                 //Code to calculate total costs for Amusement Park
                                 CalculateTotalForEnum(typeOfEvent);
                                 break;
                             case 4:
-
-                                
-
                                 //Code to calulate total costs for concerts
                                 CalculateTotalForEnum(typeOfEvent);
                                 break;

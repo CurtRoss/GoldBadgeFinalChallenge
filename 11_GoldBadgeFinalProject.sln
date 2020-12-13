@@ -3,21 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeOne.Console", "11_GoldBadgeFinalProject\ChallengeOne.Console.csproj", "{0E5B20C3-3398-4A6D-A58F-D5ADBD86A278}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_MealsConsole", "11_GoldBadgeFinalProject\01_MealsConsole.csproj", "{0E5B20C3-3398-4A6D-A58F-D5ADBD86A278}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeOne.Repository", "ChallengeOne.Repository\ChallengeOne.Repository.csproj", "{18A0F1B7-4B3D-4B08-A93D-9E363BDD166B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_MealsRepository", "ChallengeOne.Repository\01_MealsRepository.csproj", "{18A0F1B7-4B3D-4B08-A93D-9E363BDD166B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Claims.Console", "01_Claims\01_Claims.Console.csproj", "{7D63EA39-677A-4263-B936-A70884F2CBBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_ClaimsConsole", "01_Claims\02_ClaimsConsole.csproj", "{7D63EA39-677A-4263-B936-A70884F2CBBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Claims.Repository", "01_ClaimsRepository\01_Claims.Repository.csproj", "{AFCD35CA-C3E6-4577-AB20-CCE03DB7A8D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_ClaimsRepository", "01_ClaimsRepository\02_ClaimsRepository.csproj", "{AFCD35CA-C3E6-4577-AB20-CCE03DB7A8D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_BadgeConsole", "02_BadgeConsole\02_BadgeConsole.csproj", "{2327BBED-16CE-4011-A39E-9558532AEEBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_BadgeConsole", "02_BadgeConsole\03_BadgeConsole.csproj", "{2327BBED-16CE-4011-A39E-9558532AEEBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_BadgeRepository", "02_BadgeRepository\02_BadgeRepository.csproj", "{DA2C642E-4819-4521-B860-A4E62104AC89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_BadgeRepository", "02_BadgeRepository\03_BadgeRepository.csproj", "{DA2C642E-4819-4521-B860-A4E62104AC89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_EventsRepo", "03_EventsRepo\03_EventsRepo.csproj", "{501292DC-3AA1-453B-A0A3-655CEE394E01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_EventsRepo", "03_EventsRepo\04_EventsRepo.csproj", "{501292DC-3AA1-453B-A0A3-655CEE394E01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_EventsConsole", "03_EventsConsole\03_EventsConsole.csproj", "{A53F6ADB-5787-49E0-AB98-BBCDB53E9B7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_EventsConsole", "03_EventsConsole\04_EventsConsole.csproj", "{A53F6ADB-5787-49E0-AB98-BBCDB53E9B7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_MealsUnitTests", "ConsoleOne_UnitTest\01_MealsUnitTests.csproj", "{3CFA49D2-CBF9-440B-A5F0-25C73DA5C668}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_ClaimsUnitTest", "02_ClaimsUnitTest\02_ClaimsUnitTest.csproj", "{135A8952-D8B5-4D0D-9B16-FBA38897BE27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_BadgeUnitTest", "03_BadgeUnitTest\03_BadgeUnitTest.csproj", "{20C9DDFB-549A-4150-8D74-4A6F38613A38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_EventsUnitTest", "04_EventsUnitTest\04_EventsUnitTest.csproj", "{C0019545-F74E-4A27-9B7D-9B95FD0E52CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +65,22 @@ Global
 		{A53F6ADB-5787-49E0-AB98-BBCDB53E9B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A53F6ADB-5787-49E0-AB98-BBCDB53E9B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A53F6ADB-5787-49E0-AB98-BBCDB53E9B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CFA49D2-CBF9-440B-A5F0-25C73DA5C668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFA49D2-CBF9-440B-A5F0-25C73DA5C668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFA49D2-CBF9-440B-A5F0-25C73DA5C668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFA49D2-CBF9-440B-A5F0-25C73DA5C668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{135A8952-D8B5-4D0D-9B16-FBA38897BE27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{135A8952-D8B5-4D0D-9B16-FBA38897BE27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{135A8952-D8B5-4D0D-9B16-FBA38897BE27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{135A8952-D8B5-4D0D-9B16-FBA38897BE27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C9DDFB-549A-4150-8D74-4A6F38613A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C9DDFB-549A-4150-8D74-4A6F38613A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C9DDFB-549A-4150-8D74-4A6F38613A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C9DDFB-549A-4150-8D74-4A6F38613A38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0019545-F74E-4A27-9B7D-9B95FD0E52CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0019545-F74E-4A27-9B7D-9B95FD0E52CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0019545-F74E-4A27-9B7D-9B95FD0E52CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0019545-F74E-4A27-9B7D-9B95FD0E52CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

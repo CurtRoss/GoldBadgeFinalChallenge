@@ -1,0 +1,6 @@
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_ClaimsRepository\bin\Debug\01_ClaimsRepository.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_ClaimsRepository\bin\Debug\01_ClaimsRepository.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_ClaimsRepository\obj\Debug\02_ClaimsRepository.csprojAssemblyReference.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_ClaimsRepository\obj\Debug\02_ClaimsRepository.csproj.CoreCompileInputs.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_ClaimsRepository\obj\Debug\01_ClaimsRepository.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\01_ClaimsRepository\obj\Debug\01_ClaimsRepository.pdb

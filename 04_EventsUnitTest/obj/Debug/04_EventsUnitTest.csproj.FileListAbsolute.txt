@@ -1,0 +1,14 @@
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\04_EventsUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\04_EventsUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\04_EventsUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\04_EventsUnitTest\bin\Debug\04_EventsUnitTest.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\04_EventsUnitTest\bin\Debug\04_EventsUnitTest.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\04_EventsUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\04_EventsUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\04_EventsUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\04_EventsUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\04_EventsUnitTest\obj\Debug\04_EventsUnitTest.csprojAssemblyReference.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\04_EventsUnitTest\obj\Debug\04_EventsUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\04_EventsUnitTest\obj\Debug\04_EventsUnitTest.csproj.CopyComplete
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\04_EventsUnitTest\obj\Debug\04_EventsUnitTest.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\04_EventsUnitTest\obj\Debug\04_EventsUnitTest.pdb

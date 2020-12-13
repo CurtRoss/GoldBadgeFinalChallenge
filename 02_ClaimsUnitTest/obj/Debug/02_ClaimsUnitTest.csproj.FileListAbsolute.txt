@@ -1,0 +1,16 @@
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\bin\Debug\02_ClaimsUnitTest.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\bin\Debug\02_ClaimsUnitTest.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\bin\Debug\01_ClaimsRepository.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\bin\Debug\01_ClaimsRepository.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\obj\Debug\02_ClaimsUnitTest.csprojAssemblyReference.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\obj\Debug\02_ClaimsUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\obj\Debug\02_ClaimsUnitTest.csproj.CopyComplete
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\obj\Debug\02_ClaimsUnitTest.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\02_ClaimsUnitTest\obj\Debug\02_ClaimsUnitTest.pdb
