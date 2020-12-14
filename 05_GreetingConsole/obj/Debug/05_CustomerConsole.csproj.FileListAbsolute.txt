@@ -1,0 +1,10 @@
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingConsole\bin\Debug\05_GreetingConsole.exe.config
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingConsole\bin\Debug\05_GreetingConsole.exe
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingConsole\bin\Debug\05_GreetingConsole.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingConsole\bin\Debug\05_GreetingRepository.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingConsole\bin\Debug\05_GreetingRepository.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingConsole\obj\Debug\05_CustomerConsole.csprojAssemblyReference.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingConsole\obj\Debug\05_CustomerConsole.csproj.CoreCompileInputs.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingConsole\obj\Debug\05_CustomerConsole.csproj.CopyComplete
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingConsole\obj\Debug\05_GreetingConsole.exe
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingConsole\obj\Debug\05_GreetingConsole.pdb

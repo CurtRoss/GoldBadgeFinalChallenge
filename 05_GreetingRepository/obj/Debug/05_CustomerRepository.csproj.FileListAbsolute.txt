@@ -1,0 +1,6 @@
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingRepository\bin\Debug\05_GreetingRepository.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingRepository\bin\Debug\05_GreetingRepository.pdb
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingRepository\obj\Debug\05_CustomerRepository.csprojAssemblyReference.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingRepository\obj\Debug\05_CustomerRepository.csproj.CoreCompileInputs.cache
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingRepository\obj\Debug\05_GreetingRepository.dll
+C:\Users\curtr\source\repos\11_GoldBadgeFinalProject\05_GreetingRepository\obj\Debug\05_GreetingRepository.pdb
