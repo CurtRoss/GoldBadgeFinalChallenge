@@ -32,5 +32,11 @@ namespace _02_ClaimsUnitTest
             //Assert
             Assert.AreEqual(_claim, actual);
         }
+
+        [TestMethod]
+        public void ReadTestMethod()
+        {
+            Assert.IsTrue(_repo.GetClaimList().Contains(_claim));
+        }
     }
 }
