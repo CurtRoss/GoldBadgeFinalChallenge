@@ -50,12 +50,13 @@ namespace _03_BadgeUnitTest
             Badge badge = new Badge();
             badge.BadgeNumber = 3;
             BadgeRepository repository = new BadgeRepository();
+            repository.AddBadgeToDictionary(3, badge);
 
             //Act
             
 
             //Assert
-            Assert.IsNotNull(repository.GetDictionary());
+            Assert.IsTrue(repository.GetDictionary().Count > 0);
         }
 
         [TestMethod]
